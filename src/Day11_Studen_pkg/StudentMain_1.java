@@ -14,7 +14,7 @@ public class StudentMain_1 {
 		Student_Class_1 stu2 = new Student_Class_1("학생2", 1111);
 		System.out.println(stu2.name);
 		System.out.println(stu2.stuNum);
-		//dd
+		//ddd
 		
 		System.out.println("메소드 호출전"); //1번
 		//  fieldPrint .메소드 호출

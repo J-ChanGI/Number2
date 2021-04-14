@@ -9,7 +9,7 @@ public class Student_Class_1 {
 	Student_Class_1(){
 		System.out.println("기본생성자 호출");
 	}
-	//ss
+	//sss
 	Student_Class_1(String name, int stuNum){
 		System.out.println("매개변수있는 생성자");
 		this.name = name;
