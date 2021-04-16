@@ -1,32 +1,27 @@
 package Day11_Studen_pkg;
 
 public class Member {
-	
-	String id;
-	int passward;
-	String name;
+
 	int age;
+	String name;
+	String id;
+	String passward;
 	
 	Member(){
 		
 	}
-	
-	Member(String id, int passward, String name, int age){
-		this.id = id;
-		this.passward = passward;
-		this.name = name;
-		this.age = age;
-		
-		
+	Member(int age, String name, String id, String passward){
+			this.age= age;
+			this.name = name;
+			this.id = id;
+			this.passward = passward;
 	}
-	
 	void info() {
+		System.out.println(this.age);
+		System.out.println(this.name);
 		System.out.println(this.id);
 		System.out.println(this.passward);
-		System.out.println(this.name);
-		System.out.println(this.age);
 	}
-	
 	void update(String rename) {
 		System.out.println("수정");	
 		
@@ -35,5 +30,4 @@ public class Member {
 		String var1 = "김세모";
 		return var1;
 	}
-	
 }

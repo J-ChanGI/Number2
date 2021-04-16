@@ -9,7 +9,7 @@ public class MemberMain {
 		mem.age = 30;
 		mem.id = "abcdef";
 		mem.name ="김동그라미";
-		mem.passward = 666666;
+		mem.passward = "666666";
 		
 		
 		

@@ -9,7 +9,8 @@ public class StudentClassMain {
 		StudentClass stu = new StudentClass();
 		
 		// setter 를 이용하여 필드값 지정
-//		stu.name= "수정";
+		//private으로 지정 했기 때문에 접근 불가
+//		stu.name("수정");
 		stu.setName("수정");
 //		stu.phone = "666-6666";
 		stu.setPhone("666-6666");
@@ -31,12 +32,14 @@ public class StudentClassMain {
 		list.add(stu1);
 		// list의 0번 인덱스에 저장한 stu 의 name값 출력해보기
 		System.out.println(list.get(0).getName());
+//		System.out.println(list.get(0).name());
 		System.out.println(list.get(1).getName());
-
+//		System.out.println(list.get(1).name());
 		
 		System.out.println(list.get(0).getAddress());
+//		System.out.println(list.get(0).Address());
 		System.out.println(list.get(1).getAddress());
-		
+//		System.out.println(list.get(1).Address());
 	}
 
 }
