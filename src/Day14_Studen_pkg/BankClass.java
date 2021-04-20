@@ -1,7 +1,13 @@
 package Day14_Studen_pkg;
 
+//DTO  (Date Transfer Object) : 데이터 전달을 위한 객체 (클래스)
+//필드, 기본생성자, 매개변수있는 생성자, getter , setter . toString 
+// DTO 클래스 사용용도
+// 게시판 :  게시글 등록용, 회원 : 회원등록용 , 쇼핑몰 : 상품등록용 
+
+//VO (Value object) , Bean 등 으로도 불림
 public class BankClass {
-	
+
 	private int clientNumber;
 	private String name;
 	private String accountNumber;
@@ -40,5 +46,10 @@ public class BankClass {
 	}
 	public void setBalance(int balance) {
 		this.balance = balance;
+	}
+	@Override
+	public String toString() {
+		return "BankClass [clientNumber=" + clientNumber + ", name=" + name + ", accountNumber=" + accountNumber
+				+ ", balance=" + balance + "]";
 	}
 }
