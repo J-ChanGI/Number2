@@ -88,25 +88,10 @@ public class BankManin {
 						// 리턴이 없는 메소드 호출 방식
 						break;
 
+					
+					
 					case 4 :
-						System.out.print("계좌번호 : ");
-						str1 = sc.next();
-						System.out.println("출금액 : ");
-						int mul = sc.nextInt();
-						for(int i=0; i<list.size(); i++) {
-							if(str1.equals(list.get(i).getAccountNumber() ) ) {
-//								list.get(i).setBalance(list.get(i).getBalance()+add);
-							if(mul <= list.get(i).getBalance()) {
-								num1 = list.get(i).getBalance() - mul;
-								list.get(i).setBalance(num1);
-
-							}else {
-								System.out.println("잔고가 부족합니다.");
-							}
-							}
-
-
-						}
+						 list = bs.mul(list);
 						break;
 
 					case 5 :

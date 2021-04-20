@@ -25,7 +25,26 @@ public class BankServiceClass {
 	}	
 		return list;
 	}
-}
 
 	
+	List<BankClass> mul (List<BankClass> list){
+		System.out.print("계좌번호 : ");
+		String str1 = sc.next();
+		System.out.println("출금액 : ");
+		int mul = sc.nextInt();
+		for(int i=0; i<list.size(); i++) {
+			if(str1.equals(list.get(i).getAccountNumber() ) ) {
+//				list.get(i).setBalance(list.get(i).getBalance()+add);
+			if(mul <= list.get(i).getBalance()) {
+			 int num1 = list.get(i).getBalance() - mul;
+				list.get(i).setBalance(num1);
 
+			}else {
+				System.out.println("잔고가 부족합니다.");
+			}
+			}
+		}
+			return list;
+	}
+	}
+	
