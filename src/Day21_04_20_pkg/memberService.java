@@ -5,7 +5,7 @@ import java.util.*;
 public class memberService {
 	Scanner sc =new Scanner(System.in);
 	
-	void login (List <member> memberlist){
+	void login (List <member> memberlist){ // 로그인 
 		System.out.println("아이디 확인 :");
 		String id =sc.next();
 		System.out.println("비밀번호 확인 : ");
@@ -26,7 +26,7 @@ public class memberService {
 
 
 	
-	List<member> reNumber (List <member> memberlist){
+	List<member> reNumber (List <member> memberlist){ // 번호 변경 
 		System.out.println("아이디 확인 :");
 		String id =sc.next();
 		System.out.println("비밀번호 확인 : ");
@@ -44,7 +44,7 @@ public class memberService {
 		}	return memberlist;
 	}
 	
-	void memberlist(List <member> memberlist) {
+	void memberlist(List <member> memberlist) {  // 전체 회원
 		for(int i=0; i<memberlist.size(); i++) {
 			System.out.println(memberlist.get(i).toString());	
 	}

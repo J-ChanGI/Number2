@@ -45,7 +45,8 @@ public class member {
 	}
 	@Override
 	public String toString() {
-		return "member [id=" + id + ", passward=" + passward + ", name=" + name + ", aNumber=" + aNumber + "]";
+		return "member [id=" + id + ", passward=" + passward + ", name=" + name + ","
+				+ " aNumber=" + aNumber + "]";
 	}
 	
 	
